@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Booking Details</title>
+    <link rel="stylesheet" href="styles/booking-detail.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="stylesheet" href="font_styles/Poppins.css">
+    <link rel="stylesheet" href="font_styles/Montserrat.css">
+</head>
+<body>
+    <div class="nav-bg">
+        
+    </div>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">JeTeLika</a>
+        </div>
+        <div class="menus">
+            <a href="index.html">Home</a>
+            <a href="ticket.html">Ticket</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="booking.html">Booking</a>
+        </div>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="title">
+            <div class="tt-shadow">
+                <p>CHECKOUT</p>
+            </div>
+            <div class="tt-front">
+                <p>CHECKOUT</p>
+            </div>
+            <div class="progress-bar">
+                <hr class="past">
+                <div class="personal-icon current">
+                    <img src="assets/images/personal-icon-progress.png" alt="">
+                </div>
+                <hr class="off">
+                <div class="method-icon off">
+                    <img src="assets/images/method-icon-off.png" alt="">
+                </div>
+                <hr class="off">
+                <div class="payment-icon off">
+                    <img src="assets/images/payment-icon-off.png" alt="">
+                </div>
+                <hr class="off">
+            </div>
+        </div>
+    </header>
+    <form action="">
+        <div class="main-form">
+            <fieldset class="step1 current-step">
+                <legend>Personal Details</legend>
+                <div class="names">
+                    <div class="first-name-container">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                    </div>
+                    <div class="last-name-container">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="email-container">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com">
+                </div>
+                <div class="date-container">
+                    <label for="date">Start Date</label>
+                    <input type="date" id="date" name="date">
+                </div>
+            </fieldset>
+            <fieldset class="step2 hidden">
+                <legend>Payment Method</legend>
+                <div class="selection">
+                    <div class="visa">
+                        <p>Visa</p>
+                        <div class="img-container">
+                            <img src="assets/images/visa.png" alt="">
+                        </div>
+                    </div>
+                    <div class="jpay">
+                        <p>JeTeLika Pay</p>
+                        <div class="img-container">
+                            <img src="assets/images/J-Pay.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="visa-section hidden">
+                    <div class="card-number-container">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" name="card-number" placeholder="1234 1234 1234 1234">
+                    </div>
+                    <div class="expiry-cvc">
+                        <div class="expiry-container">
+                            <label for="expiry">Expiry</label>
+                            <input type="month" id="expiry" name="expiry">
+                        </div>
+                        <div class="cvc-container">
+                            <label for="cvc">CVC</label>
+                            <input type="text" id="cvc" name="cvc" placeholder="000">
+                        </div>
+                    </div>
+                    <div class="country-postal">
+                        <div class="country-container">
+                            <label for="country">Country</label>
+                            <input type="text" id="country" name="country" placeholder="Country">
+                        </div>
+                        <div class="postal-container">
+                            <label for="postal">Postal Code</label>
+                            <input type="text" id="postal" name="postal" placeholder="90210">
+                        </div>
+                    </div>
+                </div>
+                <div class="jpay-section hidden">
+                    <div class="phone-number-container">
+                        <label for="phone">Phone Number</label>
+                        <div class="phone-input-container">
+                            <input type="text" id="country-code" name="country-code" placeholder="+00">
+                            <input type="text" id="phone" name="phone" placeholder="123 4567 8900">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="step3 hidden">
+                <legend>Payment</legend>
+                <div class="package-container">
+                    <div class="package-img-container">
+
+                    </div>
+                    <div class="package-amounts-container">
+                        <div class="package-details">
+                            <p class="package-name"></p>
+                            <p class="package-price"></p>
+                        </div>
+                        <div class="total-input">
+                            <button class="decrease">-</button>
+                            <input id="total" type="number" autocomplete="off">
+                            <button class="increase">+</button>
+                        </div>
+                    </div>
+                    <div class="totals-container">
+                        <div class="subtotal">
+                            <p>Subtotal</p>
+                            <p></p>
+                        </div>
+                        <div class="tax">
+                            <p>Tax</p>
+                            <p></p>
+                        </div>
+                        <div class="total">
+                            <p>Total</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="pay-container">
+                        <button class="pay">Make Payment</button>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div class="error-container">
+            <p class="error"></p>
+        </div>
+        <div class="btns">
+            <button class="back-btn"CHECKOUT>Back</button>
+            <button class="next-btn">Next</button>
+        </div>
+    </form>
+    <footer class="footer">
+        <div class="footer-img-container">
+            <img src="assets/images/footer.png" alt="" class="footer-img">
+        </div>
+        <div class="footer-top">
+            <div class="footer-left">
+                <p class="ft-title">JeTeLika</p>
+                <p>Where Racing Meets</p>
+                <p>Island Bliss</p>
+            </div>
+            <div class="footer-right">
+                <div class="quick-links">
+                    <p class="ql-title">QUICK LINKS</p>
+                    <a href="index.html">Home</a>
+                    <a href="ticket.html">Ticket</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="booking.html">Booking</a>
+                </div>
+                <div class="contacts">
+                    <p class="contacts-title">CONTACTS</p>
+                    <p>BC "EAST GATE" Coast, st.</p>
+                    <p>Mountain Road</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="footer-botleft">
+                <p class="phone-number">082134492031</p>
+                <p>(Free Call)</p>
+            </div>
+            <div class="footer-botright">
+                <div class="footer-icons">
+                    <img class="chat-icon" src="assets/images/chat-icon.png" alt="">
+                    <img class="chat-hover-icon hidden" src="assets/images/chat-hover.png" alt="">
+                    <img class="email-icon" src="assets/images/email.png" alt="">
+                    <img class="e1mail-hover-icon hidden" src="assets/images/email-hover.png" alt="">
+                </div>
+                <div class="email">
+                    <p class="email-info">info@email.com</p>
+                    <p>Service Department</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/booking-detail.js"></script>
+</body>
+</html>

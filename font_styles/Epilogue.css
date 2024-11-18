@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Epilogue";
+    src: url("../assets/fonts/Epilogue/Epilogue-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
